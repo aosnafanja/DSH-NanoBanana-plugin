@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Nano Banana",
+    "description": "Generate and edit images with Google's Gemini image models from chat: describe the scene or name reference images, then choose a model and a 1K-4K size. Results are saved under outputs/nano-banana and shown inline. Add a Google AI Studio key as GEMINI_API_KEY in ~/.dsh/.credentials.yaml (refs); prompts and reference images are sent to Google's Generative Language API and billed there. See the package README for the model list and usage."
+  }
+}

@@ -1,0 +1,21 @@
+- insert:
+    - id: nano-banana
+      name: '@local/nano-banana'
+      config:
+        # Leave empty in normal use: the key lives in the DSH credential store as
+        # GEMINI_API_KEY in ~/.dsh/.credentials.yaml (refs:), not in this file.
+        apiKey: ''
+        # Credential name read from the credential store, then the environment.
+        apiKeyEnv: GEMINI_API_KEY
+        baseUrl: https://generativelanguage.googleapis.com
+        # Alias or full id: flash, 2.1, lite, pro, legacy.
+        defaultModel: flash
+        # 512, 1K, 2K, 4K. 512 requires gemini-3.1-flash-image.
+        defaultSize: 2K
+        # Empty leaves the ratio to the model.
+        defaultAspectRatio: ''
+        # minimal, medium, high where the model supports it. Empty keeps its default.
+        defaultThinking: ''
+        # Directory for generated files, relative to the Session workspace.
+        outputDir: outputs/nano-banana
+        requestTimeoutMs: 240000
