@@ -12,24 +12,23 @@ Lite / 2.5 legacy) прямо из чата: промпт или пути к р�
 
 Нужен DeepSeek Harness 0.2.x с профилем (Desktop или `dsh` с `--profile`).
 
-1. Склонируйте репозиторий в постоянную папку:
+**Из GitHub.** В DSH откройте **Plugins → Add plugin**, вставьте адрес
 
-   ```bash
-   git clone https://github.com/aosnafanja/DSH-NanoBanana-plugin.git
-   ```
+```
+git+https://github.com/aosnafanja/DSH-NanoBanana-plugin.git
+```
 
-   Приватный репозиторий: сначала `gh auth login` (или настройте SSH-ключ), либо
-   просто скопируйте папку на машину любым способом.
+нажмите **Install**, затем **Enable now**.
 
-2. В DSH откройте **Plugins → Add plugin**, вставьте **абсолютный путь** к папке
-   репозитория, нажмите **Install**, затем **Enable now**.
+**Из локальной папки.** Склонируйте репозиторий (или скопируйте папку на машину)
+и укажите в том же диалоге абсолютный путь к ней:
 
-   Если у машины есть доступ к GitHub, вместо пути можно вставить адрес
-   `https://github.com/aosnafanja/DSH-NanoBanana-plugin.git`.
+```bash
+git clone https://github.com/aosnafanja/DSH-NanoBanana-plugin.git ~/DSH-NanoBanana-plugin
+```
 
-3. Добавьте ключ Gemini API (см. ниже) и вызовите инструмент в чате.
-
-Плагин ставится ссылкой на папку: не удаляйте и не перемещайте её после установки.
+При установке по пути плагин подключается ссылкой на папку — не удаляйте и не
+перемещайте её после установки.
 
 ## Ключ API
 
